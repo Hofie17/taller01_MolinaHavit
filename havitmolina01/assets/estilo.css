@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Título de la página</h1>
+  <p>Este es un párrafo de ejemplo.</p>
+</div>
+
+@import "variables";
+
+.titulo {
+  color: $color-primario;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo {
+      font-size: 18px;
+    }
+  }
+  
+.boton {
+    animation: animacion 2s infinite;
+  }
+  
+  @keyframes animacion {
+    0% {
+      background-color: #fff;
+    }
+    50% {
+      background-color: #000;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+  
+<div class="contenedor">
+  <div class="item">Elemento 1</div>
+  <div class="item">Elemento 2</div>
+  <div class="item">Elemento 3</div>
+</div>
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
